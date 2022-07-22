@@ -19,7 +19,7 @@
       }
 
     * {
-  box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     .flex {
@@ -40,9 +40,11 @@
       flex: 40%;
     }
 
-    @media (max-width: 375px) {
-      .itemright, .itemleft {
-        flex: 100%;}
+    @media screen and (max-width: 375px) {
+      .flex {
+        flex: 100%;
+      flex-direction: column-reverse;
+      }
       }
     .stats {
       display: inline-block;
@@ -102,9 +104,11 @@
   </div>
 </div>
 
-  <p>
+  <footer>
+    <p>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.americanapple.io">AmericanAppleIO</a>.
   </p>
+  </footer>
 </body>
 </html>
